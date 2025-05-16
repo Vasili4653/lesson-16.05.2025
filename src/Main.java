@@ -46,7 +46,21 @@ public class Main {
         for (int v : arr) { // все блоки обязательны
             System.out.println(v);
         }
-
+        /////Пузырек
+        int[] buble = {1, -5, 2, -44, 13, -88, 12};
+        for (int i = 0; i < buble.length; i++){
+            for (int j = buble.length - 1; j > i; j--){
+                if (buble[j] < buble[i]) { // > - в обратном порядке
+                    int tmp = buble[i];
+                    buble[i] = buble[j];
+                    buble[j] = tmp;
+                }
+            }
+        }
+        System.out.println("----------------");
+        for(int v : buble) {
+            System.out.println(v);
+        }
 
 
     }
@@ -58,3 +72,16 @@ public class Main {
         // git add -A
         // git commit -m "комментарий"
         // git push origin master
+
+        //////// добавить после изменений
+        // git add -A
+        // git commit -m "комментарий"
+        // git push origin master
+
+
+
+
+
+
+
+
